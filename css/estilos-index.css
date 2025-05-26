@@ -1,0 +1,326 @@
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+body{
+    font-family: "Comic Relief", system-ui;
+    color: #B56BE3;
+    margin: 0;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: auto 1fr auto;
+    gap: 10px;
+}
+
+header nav{
+    width: 100%;
+}
+
+/*elementos del grid-container*/
+header, footer{
+    grid-column: 1 / 3;
+    width: 100%;
+    height:180px;
+}
+
+header{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #B56BE3;
+}
+
+footer{
+    background-color: #B56BE3;
+}
+
+main{
+    grid-column: 2 / 3;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+
+/*elementos del header*/
+.item-logo{
+    margin: 10px;
+}
+
+.flex-menu{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.8rem;
+    font-size: 1.25rem;
+    width: 90%;
+}
+
+.flex-menu li a{
+    text-decoration: none;
+    color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+.flex-menu li :hover{
+    color: indigo;
+    transform: scale(1.3);
+}
+
+/*elementos del main*/
+#seccion-inicio{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 70%;
+    background-image: url("https://us.123rf.com/450wm/liudmilachernetska/liudmilachernetska2409/liudmilachernetska240951069/236697458-aromatic-incense-sticks-smoldering-on-wooden-table.jpg?ver=6");
+    background-size: cover;
+    font-family: "Dancing Script", cursive;;
+}
+
+.productos-destacados{
+    padding: 2.5rem;
+    text-align: center;
+
+}
+
+.galeria-productos-destacados{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 95%;
+    gap: 0.8rem;
+    margin-top: 20%;
+}
+
+.item-destacado{
+    width: 12.5rem;
+    height: 11rem;
+    position: relative;
+    margin-left: 2rem;
+    margin-bottom: 30%;
+    background-color: #2a083f;
+    border: 2px solid #2a083f;
+    transition: transform 1s ease;
+}
+
+.item-destacado img{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.productos-destacados h2{
+    font-family: "Nunito Sans", sans-serif;
+    color: white;
+    margin: 10%;
+}
+
+.productos-destacados p{
+    color: white;
+    font-size: 1.2rem;
+    width: 80%;
+    margin-left: 10%;
+    padding: 0.8rem;
+}
+
+.item-destacado span{
+    position: absolute;
+    bottom: 0;
+    font-size: 15px;
+    color:white;
+    padding-bottom: 0px;
+    padding-left: 10%;
+    display: block;
+    text-align: center;
+}
+
+.item-destacado:hover{
+    transform: scale(1.3);
+    box-shadow: 0 8px 16px rgba(246, 246, 245, 0.86);
+}
+
+/*seccion contacto */
+#seccion-contacto{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    height: 30%;
+
+}
+.contacto, .ubicacion, .mapa{
+    width: 30%;
+    color: #000000;
+    font-style: normal;
+    margin: 0.3rem;
+}
+
+.contacto h1{
+    font-size: 1.2em;
+}
+
+.frm_contacto{
+    width: 90%;
+    height: 18rem;
+    display: block; 
+    align-items: center;
+}
+
+#mensaje, #nombre, #mail{
+    width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 8px;
+}
+
+#btn_submit{
+    width: 35%;/*120px;*/
+    margin-top: 10px;
+    margin-left: 35%;
+}
+
+.ubicacion{
+    display: block;
+    width: 30%;
+    margin: 20px;
+}
+
+.ubicacion h3{
+    font-size: 1em;
+    margin-top: 2px;
+}
+
+.ubicacion p{
+    width: 100%;
+    font-size: 1em;
+}
+
+.mapa{
+    margin-top: 15px;
+}
+
+/*SECCION RESEÑAS */
+#seccion-resenias{
+    width: 100%;
+    margin-top: 1rem;
+    color: #000000;
+}
+
+.resenias{
+    width: 90%;
+    margin-top: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 1rem;
+}
+
+
+.testimonios{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 15rem;
+    height: 7rem;
+    font-size: 0.6rem;
+    border:#B56BE3 solid 1px;
+    border-radius: 20px;
+
+}
+
+.img-testimonio{
+    position: absolute;
+    left: 0.5rem;
+    top: 1rem;
+    border-radius: 50%;
+    display: inline;
+}
+
+.nombre-testimonio{
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    font-size: 1rem;
+    width: 12rem;
+    right: 0;
+    padding-left: 0.5rem;
+}
+
+.estrellas{
+    position: absolute;
+    top: 2.5rem;
+    left: 0.5rem;
+}
+
+.comentario-testimonio{
+    position: absolute;
+    bottom: 0;
+    left: 1rem;
+    padding-bottom: 0;
+}
+
+/*footer*/
+.foot{
+    padding: 20px;
+    color: #ffffff;
+}
+
+.foot i{
+    padding: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+    .grid-container{
+        grid-template-columns: 1fr;
+    }
+
+    .flex-menu{
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    #seccion-inicio{
+        height: 75%;
+    }
+    .productos-destacados{
+        padding: 0.4rem;
+        width: 90%;
+    }
+
+    .galeria-productos-destacados{
+        flex-direction: column;
+        align-items: center;
+        gap: 0.2rem;
+        margin-top: 0.5rem;
+    }
+
+    .item-destacado{
+        margin-bottom: 5%;
+    }
+     .item-destacado span{
+        padding-top: 0.3rem;
+    }
+
+    #seccion-contacto{
+        flex-direction: column;
+        margin: 0.2rem;
+    }
+
+    .contacto, .ubicacion, .mapa{
+        width: 100%;
+    }
+
+    .frm_contacto{
+        height: 15rem;
+    }
+
+    .ubicacion{
+        padding: 0.5rem;
+    }
+
+}

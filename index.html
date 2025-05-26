@@ -1,0 +1,200 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    <!-- fuente de google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <!--iconos de font-awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />"
+
+    <!--mis estilos-->
+    <link rel="stylesheet" href="css\estilos-index.css">
+
+    <title>ClariAn</title>
+
+</head>
+<body>
+    <div class="grid-container">
+        <header>
+            <img src="imagenes/logo.jpg" class="item-logo" width="200" height="150" alt="logo clarian sahumerios">
+            <nav>    
+                <ul class="flex-menu">
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="#seccion-contacto">Contacto</a></li>
+                    <li><a href="#seccion-resenias">Reseñas</a></li>
+                    
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section id="seccion-inicio">
+                <div class="productos-destacados">
+                    <h2>PRODUCTOS DESTACADOS: <br>linea 5 elementos</h2>
+                    <p>Un elemento para cada signo. Las fuerzas de los 5 elementos, AGUA, TIERRA, FUEGO, AIRE y ÉTER acompañan el poder de las flores y hierbas sagradas en cada signo zodiacal. <br><br>
+                    Signos de AGUA (Cancer, Escorpio, Piscis): "RENACER" (Olíbano & Lemongrass, estos elementos invitan a fluir en las aguas de la aceptación y adaptación). Las personas Agua son sensibles y emocionales. Son un bálsamo que nutre y purifica su entorno. <br>
+                    Signos de TIERRA (Capricornio, Virgo, Tauro): "ARMONÍA" (Palo Santo & Jengibre, estos elementos dan confianza y conexión con la Madre Tierra). Las personas Tierra son sólidas y aman la belleza, la naturaleza y el arte.<br>
+                    Signos de FUEGO (Leo, Sagitario, Aries): "FUERZA" (Sangre de Dragón, este elemento trae protección y enciende tu fuerza). Las personas Fuego son creativas, con un gran impulso de crecimiento y superación personal.<br>
+                    Signos de AIRE (Geminis, Libra, Acuario); "ALEGRÍA" (Flor de Paraíso, aliviana los pensamientos y libera el espíritu). Las personas Aire son adaptables, de gran claridad mental y mucho carisma personal.<br>
+                    Todos los signos resuenan con ÉTER: "CLARIDAD" para recibir las Altas Vibraciones (Reina de la Noche & Lavanda, que invocan al Amor Eterno y a la Expansión Universal).  Este es el lugar de orígen de los demás elementos y el punto de fusión entre ellos.  </p>
+                </div>
+                <div class="galeria-productos-destacados">
+                    <div class="item-destacado">
+                        <img src="imagenes/destacados/eter-5elementos.webp" width="200" height="150" alt="sahumerio sagrada madre linea 5 elementos eter">
+                        <span>Eter: claridad</span>
+                    </div>
+                    <div class="item-destacado">
+                        <img src="imagenes/destacados/fuego-5elementos.webp" width="200" height="150" alt="sahumerio sagrada madre linea 5 elementos fuego">
+                        <span>Fuego: fuerza</span>
+                    </div> 
+                    <div class="item-destacado"> 
+                        <img src="imagenes/destacados/aire-5elementos.webp" width="200" height="150" alt="sahumerio sagrada madre linea 5 elementos aire">
+                        <span>Aire: alegria</span>
+                    </div>
+                    <div class="item-destacado">
+                        <img src="imagenes/destacados/agua-5elementos.jpg" width="200" height="150" alt="sahumerio sagrada madre linea 5 elementos agua">
+                        <span>Agua: renacer</span>
+                    </div>
+                    <div class="item-destacado">
+                        <img src="imagenes/destacados/tierra-5elementos.jpg" width="200" height="150" alt="sahumerio sagrada madre linea 5 elementos tierra">
+                        <span>Tierra: armonia</span>
+                    </div>
+                </div>
+            </section>
+        
+            <section id="seccion-contacto">
+
+                <div class="contacto">
+                    <h1>Contacto</h1>
+                    <form class="frm_contacto" action="https://formspree.io/f/xnnplogd" method="post">
+                        <input type="text" id="nombre" placeholder="nombre">
+                        <input type="email" id="mail" placeholder="email">
+                        <textarea id="mensaje" placeholder="mensaje"></textarea>
+                        <button id="btn_submit" type="submit">enviar consulta</button>
+                    </form>
+                </div>
+
+                <div class="ubicacion">
+                    <h3>Ubicacion:</h3>
+                    <p>Ramos Mejia, Buenos Aires</p>
+                    <h3>WhatsApp:</h3>
+                    <p>11 6666 6666</p>
+                    <h3>Email:</h3>
+                    <p>clariansahumerios@gmail.com</p>
+                </div>
+
+                <div class="mapa">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.791595127605!2d-58.56642782514327!3d-34.65996576046937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc7d076cdde0f%3A0x5ea598a56bf97d0a!2sAlberto%20Lartigau%20%26%20Coronel%20Brandsen%2C%20B1704%20Ramos%20Mej%C3%ADa%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1746388351554!5m2!1ses!2sar" width="320" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+            </section>
+
+            <section id="seccion-resenias">
+                <h1>Reseñas</h1>
+                <div class="resenias">
+                    <div class="testimonios">
+                        <img class="img-testimonio" src="/imagenes/resenias/gabriela_flores.jpg" width="30" height="30" alt="">
+                        <p class="nombre-testimonio">Gabriela Flores</p>
+                        <p class="estrellas">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span>02-02-2025</span>
+                        </p>
+                        <p class="comentario-testimonio">¡Increíble servicio! Estoy muy satisfecho con la calidad.</p>
+                    </div>
+
+                    <div class="testimonios">
+                        <img class="img-testimonio" src="/imagenes/resenias/liliana_ochoa.jpg" width="30" height="30" alt="">
+                        <p class="nombre-testimonio">Liliana Ochoa</p>
+                        <p class="estrellas">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span>21-02-2025</span>
+                        </p>
+                        <p class="comentario-testimonio">Muy recomendable. Excelente atención y profesionalismo</p>
+                    </div>
+
+                    <div class="testimonios">
+                        <img class="img-testimonio" src="/imagenes/resenias/deborah_roch.png" width="30" height="30" alt="">
+                        <p class="nombre-testimonio">Deborah Roch</p>
+                        <p class="estrellas">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span>03-03-2025</span>
+                        </p>
+                        <p class="comentario-testimonio">Una experiencia fantástica. Sin duda volveré a comprar</p>
+                    </div>
+
+                    <div class="testimonios">
+                        <img class="img-testimonio" src="/imagenes/resenias/adriana_cervantes.png" width="30" height="30" alt="">
+                        <p class="nombre-testimonio">Adri Cervantes</p>
+                        <p class="estrellas">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span>05-03-2025</span>
+                        </p>
+                        <p class="comentario-testimonio">riquisimo perfume y duradero</p>
+                    </div>
+
+                    <div class="testimonios">
+                        <img class="img-testimonio" src="/imagenes/resenias/emilia_succoni.jpeg" width="30" height="30" alt="">
+                        <p class="nombre-testimonio">Emilia</p>
+                        <p class="estrellas">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span>25-04-2025</span>
+                        </p>
+                        <p class="comentario-testimonio">Productos de calidad</p>
+                    </div>
+
+                    <div class="testimonios">
+                        <img class="img-testimonio" src="/imagenes/resenias/josefina_durante.png"width="30" height="30" alt="">
+                        <p class="nombre-testimonio">Josefina Durante</p>
+                        <p class="estrellas">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <span>02-02-2025</span>
+                        </p>
+                        <p class="comentario-testimonio"></p>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer>
+            <div class="foot">
+                <p id="ubicacion"> <i class="fa-solid fa-location-dot"></i> Lartigau y Brandsen, Ramos Mejia,  Buenos Aires | 
+                <i class="fa-brands fa-whatsapp"> 11 6666 6666</i></p>
+                <p id="mail"><i class="fa-regular fa-envelope"></i> clariansahumerios@gmail.com</p>
+                <p id="redes"><i class="fa-brands fa-instagram"></i> clariansahumerios</p>           
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
